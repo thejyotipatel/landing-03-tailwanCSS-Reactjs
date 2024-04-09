@@ -1,4 +1,5 @@
 import { ImPaypal } from 'react-icons/im'
+import { Link } from 'react-router-dom'
 
 const footerLinks1 = [
   {
@@ -58,12 +59,12 @@ const Footer = () => {
                 {footerLinks1.map((item) => {
                   return (
                     <li key={item.id}>
-                      <a
-                        href={item.path}
+                      <Link
+                        to={item.path}
                         className=' text-gray-950 hover:text-blue-600  text-sm   transition-all font-semibold'
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     </li>
                   )
                 })}
@@ -81,12 +82,12 @@ const Footer = () => {
               {footerLinks2.map((item) => {
                 return (
                   <li key={item.id}>
-                    <a
-                      href={item.path}
+                    <Link
+                      to={item.path}
                       className=' text-gray-950 hover:text-blue-600  text-sm   transition-all font-semibold'
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 )
               })}

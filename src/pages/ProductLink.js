@@ -1,6 +1,7 @@
 import { LuCheckCircle } from 'react-icons/lu'
 import { FaFacebook, FaTwitter } from 'react-icons/fa'
 import { MdQrCode2 } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const ProductLink = () => {
   return (
@@ -20,21 +21,21 @@ const ProductLink = () => {
             </p>
 
             <div className='flex gap-8 items-center justify-center'>
-              <a href='#' className=''>
+              <Link to='#'>
                 <span className='text-4xl text-blue-600'>
                   <FaFacebook />
                 </span>
-              </a>
-              <a href='#' className=''>
+              </Link>
+              <Link to='#'>
                 <span className='text-4xl text-blue-600'>
                   <FaTwitter />
                 </span>
-              </a>
-              <a href='#' className=''>
+              </Link>
+              <Link to='#'>
                 <span className='text-4xl text-blue-600'>
                   <MdQrCode2 />
                 </span>
-              </a>
+              </Link>
             </div>
             <div className='grid gap-6 w-full'>
               <button className='bg-blue-600 text-gray-100  px-4 py-3 rounded-full'>
